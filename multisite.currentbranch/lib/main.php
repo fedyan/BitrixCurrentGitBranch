@@ -16,7 +16,7 @@ class Main
    public static function addCurrentBranchButton()
    {
        //todo выбор пути к гиту в зависимости от домена из настроек модуля
-       $sPath = '/var/www/verbovenko/Multisite/';
+       $sPath = '';
         if ($sBranch = self::getCurrentBranch($sPath)) {
 
             //core/local/modules/multisite.currentbranch/lib/main.php
