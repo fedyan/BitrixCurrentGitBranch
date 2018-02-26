@@ -1,5 +1,5 @@
 <?
-$MESS["CURRENT_BRANCH_MODULE_NAME"] = "Multisite Current Branch";
+$MESS["CURRENT_BRANCH_MODULE_NAME"] = "Текущая ветка Git";
 $MESS["CURRENT_BRANCH_MODULE_DESC"] = "Модуль для вывода текущей ветки";
 $MESS["PARTNER_URI"] = "";
 $MESS["PARTNER_NAME"] = "Вербовенко Фёдор";

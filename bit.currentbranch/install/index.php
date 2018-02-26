@@ -1,8 +1,8 @@
 <?php
 IncludeModuleLangFile(__FILE__);
-Class multisite_currentbranch extends CModule
+Class bit_currentbranch extends CModule
 {
-    var $MODULE_ID = "multisite.currentbranch";
+    var $MODULE_ID = "bit.currentbranch";
     var $MODULE_VERSION;
     var $MODULE_VERSION_DATE;
     var $MODULE_NAME;
@@ -24,14 +24,14 @@ Class multisite_currentbranch extends CModule
     function DoInstall()
     {
         RegisterModule($this->MODULE_ID);
-        RegisterModuleDependences("main", "OnBeforeProlog", $this->MODULE_ID, '\Multisite\Currentbranch\Main', "addCurrentBranchButton");
+        RegisterModuleDependences("main", "OnBeforeProlog", $this->MODULE_ID, '\Bit\Currentbranch\Main', "addCurrentBranchButton");
         CAdminMessage::ShowNote("Модуль установлен");
     }
 
     function DoUninstall()
     {
         UnRegisterModule($this->MODULE_ID);
-        UnRegisterModuleDependences("main", "OnBeforeProlog", $this->MODULE_ID, '\Multisite\Currentbranch\Main', "addCurrentBranchButton");
+        UnRegisterModuleDependences("main", "OnBeforeProlog", $this->MODULE_ID, '\Bit\Currentbranch\Main', "addCurrentBranchButton");
         CAdminMessage::ShowNote("Модуль успешно удален из системы");
     }
 
